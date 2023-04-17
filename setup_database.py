@@ -24,7 +24,7 @@ with open("unigram_freq.csv", "r") as csvfile:
     for row in csvreader:
         # Insert the row into the MySQL database
         cursor.execute("INSERT INTO english_words (word, count, skip) VALUES (%s, %s, FALSE)", row)
-    cursor.execute('INSERT INTO settings (name, val) VALUES ("cur_word_id", 3000)')
+    cursor.execute('INSERT INTO settings (name, val) VALUES ("WORD_ID_LOWER_THRESHOLD", 3000)')
     cursor.execute('INSERT INTO settings (name, val) VALUES ("last_updated_time", 0)')
 
 # Commit the changes
