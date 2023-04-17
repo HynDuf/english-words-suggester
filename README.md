@@ -42,7 +42,7 @@ python setup_database.py
 <p align="center">
 <img src="assets/cli.png" />
 </p>
-- For easier use, create a bash script for running the program
+- For easier use, create a bash script for running the program (remember to grant execute permission for the file too).
 
 ```bash
 #!/bin/bash
