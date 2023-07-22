@@ -5,7 +5,7 @@ I got the english words collection sorted by frequency from [Kaggle - english-wo
 
 Summarise the program:
 - Each word has the boolean value `skip` indicate that I want it to be suggested or not (saved on MYSQL database).
-- Each time running, the programm suggests 10 words that `skip = FALSE` and `id >= WORD_ID_LOWER_THRESHOLD` (as I don't want to learn too easy words). Mark all those words as skipped and the programm would suggest the next 10 words satisfied.
+- Each time running, the programm suggests 10 words that `skip = FALSE` and `id >= WORD_ID_LOWER_THRESHOLD` (as I don't want to learn too easy words). Mark all those words as skipped and the program would suggest the next 10 words satisfied.
 ## Set up
 - Create the MYSQL database and their tables for the project
 ```sql
